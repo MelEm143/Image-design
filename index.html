@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+    <!--Design-->
+    <style>
+        * {
+            background: black;
+        }
+        .image-wrapper{
+            display: flex;
+            justify-content: center;
+            margin-top: 8rem;
+            align-items: center;
+        }
+        .image-wrapper img{
+            width:200px;
+            clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+            transition: 0.5s ease-out 100ms;
+            cursor: pointer;
+        }
+        .image-wrapper img:hover{
+            transform: scale(1.05);
+        }
+        .image-wrapper .img1 {
+            height: 20rem;
+            margin-right: -30px;
+        }
+        .image-wrapper .img2 {
+            height: 25rem;
+            margin-right: -30px;
+        }
+        .image-wrapper .img3 {
+            height: 20rem;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="image-wrapper">
+            <img src="images/CSPC-intrams_DSCF8271.jpg" alt="" class="img1">
+            <img src="images/IMG_20221130_151935.jpg" alt="" class="img2">
+            <img src="images/IMG_4552.JPG" alt="" class="img3">
+        </div>
+    </div>
+</body>
+</html>
